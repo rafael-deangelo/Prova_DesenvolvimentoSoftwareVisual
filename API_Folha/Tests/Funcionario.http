@@ -1,0 +1,30 @@
+### Listar os funcionários
+GET https://localhost:5002/api/funcionario/listar
+
+### Cadastrar um funcionário
+POST https://localhost:5002/api/funcionario/cadastrar
+Content-Type:  application/json
+
+{
+    "nome" : "Rafael de Angelo",
+    "cpf" : "08697637928",
+    "email" : "rafaelangelo15@hotmail.com",
+    "nascimento" : "1994-04-03"
+}
+
+### Buscar um funcionário pelo CPF
+GET https://localhost:5002/api/funcionario/buscar/08697637929
+
+### Deletar um funcionário pelo CPF
+DELETE  https://localhost:5002/api/funcionario/deletar/34
+Content-Type:  application/json
+
+### Alterar um funcionário
+PATCH  https://localhost:5002/api/funcionario/alterar
+Content-Type: application/json
+
+{
+    "funcionarioid" : 34,
+    "nome" : "Rafael de Angelo de Oliveira",
+    "cpf" : "08697637927"
+}
